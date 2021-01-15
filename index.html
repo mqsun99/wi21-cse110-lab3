@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Page</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML">
+  <meta name="description" content="User Page for learning HTML">
+  <meta name="author" content="Miaoqiu Sun">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="search" href="https://github.com/mqsun99/CSE110-Lab2">
+</head>
+<body>
 
+<main>
+  <header>
+    <h1>Miaoqiu Sun's User Page</h1>
+    <p>Hi! Welcome to my User Page! If you want to make your own page,
+      visit <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+      <iframe src="https://pages.github.com/" title="GitHub Pages"></iframe>
+      <form action="/action_page.php">
+      <label for="homepage">I am interested in seeing your homepage if you have one(enter a URL please):<br>
+      </label>
+      <input type="url" id="homepage" name="homepage">
+      <input type="submit" value="Submit">
+</form>
+  </header>
+  <section>
+    <h2>About Me</h2>
+      <p>My name is Miaoqiu Sun. I am a third-year CS major student at UCSD.
+        My hometown is <i>Suzhou, China</i>.
+      <aside>
+        <details>
+        <summary>Suzhou</summary>
+        <p><em>Suzhou is a beautiful place for traveling and living.
+          It is known for its <span style="color:blue">classical gardens and bridges</span></em>.</p>
+        </details>
+      </aside>
+  </section>
+
+  <h3>Hobbies</h3>
+    <p>My favorite <strong>music</strong> includes:</p>
+    <ul>
+      <li>Melody Rap</li>
+      <li>R&B</li>
+    </ul>
+
+    <p>My goals for this quarter are:</p>
+    <ol>
+      <li>Sleep earlier</li>
+      <li>Study harder</li>
+      <li>Gain more weight (I am way too skinny)</li>
+    </ol>
+
+    <p>My favorite <strong>dog</strong> is Shiba!!!</p><br>
+    <figure>
+      <img src="https://www.petbudget.com/wp-content/uploads/2020/04/Shiba-Inu-Cost-Calculator.jpg" alt="Shiba" style="width:100%">
+      <figcaption>Fig.1 - A Shiba Puppy and His Mom.</figcaption>
+    </figure>
+
+  <table>
+    <colgroup>
+      <col span="2" style="background-color:grey">
+    </colgroup>
+    <caption>My daily screen time of using phone</caption>
+    <tr>
+      <th>Days</th>
+      <th>My daily screen time<br>(minutes)</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>514</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>498</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>485</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>725</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>483</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>596</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>500</td>
+    </tr>
+  </table>
+
+  <h3>Skills</h3>
+    <p>Here are the programming languages that I am proficient with:</p>
+    <nav>
+    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> |
+    <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C/C++</a> |
+    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>
+    </nav>
+    </main>
+
+<br><hr>
+
+<div>
+  <h2>What I have learnt from CSE110 so far...</h2>
+  <h3>git commands</h3>
+  <p>From Lab 1, I learned that some basic Git commands may include:<br>
+  <code><pre>git status
+git add
+git commit</pre></code></p>
+</div>
+
+<h3>HTML elements:</h3>
+<h3>video</h3>
+<p>Here I am trying to upload and play a video.</p>
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h3>audio</h3>
+<p>Here I am trying to play an audio.</p>
+<audio controls>
+  <source src="audio.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+</audio><br>
+
+<h3>canvas</h3>
+<p>Here I am trying to display the canvas element with border:</p>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+<h3>svg</h3>
+<p>Now I'm drawing a circle using svg element:</p>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="pink" />
+</svg>
+
+<h3>form</h3>
+<p>-Take a minute to tell me your favorite movie:</p>
+<form action="/action_page.php">
+  <label for="fname">Answer:</label>
+  <input type="text" id="fname" name="fname">
+  <input type="submit" value="Submit">
+  <p>-When do you usually wake up in the morning?</p>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit" value="Submit">
+  <p>-Which week is it today?</p>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+  <input type="submit" value="Submit">
+</form>
+
+
+<h3>optgroup</h3>
+<form action="/action_page.php">
+  <label for="weather">Choose your favorite weather:</label>
+  <select name="weather" id="weather">
+    <optgroup label="cold/cool">
+      <option value="fall">Fall</option>
+      <option value="winter">Winter</option>
+    </optgroup>
+    <optgroup label="hot/warm">
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>label</h3>
+<p>Tell me your gender:</p>
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>fieldset</h3>
+<form action="/action_page.php">
+ <fieldset>
+  <legend>About You</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+  <input type="submit" value="Submit">
+
+ </fieldset>
+</form>
+
+
+<h3>textarea</h3>
+<form action="/action_page.php">
+<label for="review">Review of my page:</label>
+<textarea id="review" name="review" rows="4" cols="50">
+  Enter your response here.
+  </textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<h3>datalist</h3>
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Safari">
+  </datalist>
+  <input type="submit" value="Submit">
+</form>
+
+
+<br><br><hr>
+<p>Thank you for taking your time and hope you have a nice day!</p>
+<p>Do you enjoy veiwing my page?</p>
+<input type="button" onclick="alert('Thank you!')" value="Yes">
+<button type="button" onclick="alert('I'll do better next time!')">No</button><br><br>
+
+<template>
+  <h3>Thank you!!</h3>
+  <img src="https://thehappypuppysite.com/wp-content/uploads/2019/06/Mini-Shiba-Inu-HP-long.jpg" width="214" height="204">
+</template>
+
+<picture>
+<source srcset="https://thehappypuppysite.com/wp-content/uploads/2019/06/Mini-Shiba-Inu-HP-long.jpg">
+<source srcset="https://www.petbudget.com/wp-content/uploads/2020/04/Shiba-Inu-Cost-Calculator.jpg">
+<img src="https://thehappypuppysite.com/wp-content/uploads/2019/06/Mini-Shiba-Inu-HP-long.jpg" alt="image" style="width:50%">
+</picture>
+
+<footer>
+  <p><b>Author: Miaoqiu Sun</b><br>
+  <a href="mailto:mis002@ucsd.edu">mis002@ucsd.edu</a></p>
+</footer>
+
+</body>
+</html>
