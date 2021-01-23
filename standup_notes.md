@@ -1,8 +1,10 @@
 # wi21-cse110-lab3
 # Team Meeting
 
-### Agenda:
-* 
+### Question to ask yourself:
+* How are you in the process of finishing the last task assigned?
+* Do you need any group members' help?
+* How can we move forward?
 
 ### Group Member Present:
 * 
