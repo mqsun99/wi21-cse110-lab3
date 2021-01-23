@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+  p.hometown {
+    background: yellow;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,600&family=Open+Sans:wght@300&family=Roboto+Mono:wght@100&display=swap');
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,600&family=Open+Sans:wght@300&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
   <title>User Page</title>
   <meta charset="UTF-8">
   <meta name="keywords" content="HTML">
@@ -15,7 +24,7 @@
   <header>
     <h1>Miaoqiu Sun's User Page</h1>
     <p>Hi! Welcome to my User Page! If you want to make your own page,
-      visit <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+      visit <a href="https://pages.github.com/" target="blank">GitHub Pages</a>.</p>
       <iframe src="https://pages.github.com/" title="GitHub Pages"></iframe>
       <form action="/action_page.php">
       <label for="homepage">I am interested in seeing your homepage if you have one(enter a URL please):<br>
@@ -26,12 +35,12 @@
   </header>
   <section>
     <h2>About Me</h2>
-      <p>My name is Miaoqiu Sun. I am a third-year CS major student at UCSD.
+      <p id="intro">My name is Miaoqiu Sun. I am a third-year CS major student at UCSD.
         My hometown is <i>Suzhou, China</i>.
       <aside>
         <details>
         <summary>Suzhou</summary>
-        <p><em>Suzhou is a beautiful place for traveling and living.
+        <p class="hometown"><em>Suzhou is a beautiful place for traveling and living.
           It is known for its <span style="color:blue">classical gardens and bridges</span></em>.</p>
         </details>
       </aside>
@@ -44,7 +53,7 @@
       <li>R&B</li>
     </ul>
 
-    <p>My goals for this quarter are:</p>
+    <p class="ex1">My goals for this quarter are:</p>
     <ol>
       <li>Sleep earlier</li>
       <li>Study harder</li>
@@ -58,7 +67,7 @@
     </figure>
 
   <table>
-    <caption>My daily screen time of using phone</caption>
+    <caption>My daily <p class="ex2">screen time</p> of using phone</caption>
     <colgroup>
       <col span="2" style="background-color:grey">
     </colgroup>
@@ -109,20 +118,24 @@
 
 <div>
   <h2>What I have learnt from CSE110 so far...</h2>
+</div>
   <h3>git commands</h3>
   <p>From Lab 1, I learned that some basic Git commands may include:</p>
 <pre><code>git status</code>
 <code>git add</code>
 <code>git commit</code></pre>
-</div>
 
+<div class="html">
 <h3>HTML elements:</h3>
-<h3>video</h3>
+</div>
+<div class="video">
+  <h3>video</h3>
 <p>Here I am trying to upload and play a video.</p>
 <video width="320" height="240" controls>
   <source src="video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</div>
 
 <h3>audio</h3>
 <p>Here I am trying to play an audio.</p>
@@ -229,12 +242,21 @@
     <option value="Safari">
   </datalist>
   <input type="submit" value="Submit">
-</form>
+</form><br>
+
+<div class="grid-container">
+  <div class="Thanks">Thanks</div>
+  <div class="For">for</div>
+  <div class="Viewing">viewing</div>
+  <div class="My">my</div>
+  <div class="Page">page</div>
+  <div class=":)">:)</div>
+</div>
 
 
 <br><br><hr>
-<p>Thank you for taking your time and hope you have a nice day!</p>
-<p>Did you enjoy viewing my page?</p>
+<p id="thanks">Thank you for taking your time and hope you have a nice day!</p>
+<p>Do you enjoy veiwing my page?</p>
 <input type="button" onclick="alert('Thank you!')" value="Yes">
 <button type="button" onclick="alert('I'll do better next time!')">No</button><br><br>
 
@@ -248,6 +270,17 @@
 <source media="(min-width:465px)" srcset="https://www.petbudget.com/wp-content/uploads/2020/04/Shiba-Inu-Cost-Calculator.jpg">
 <img src="https://thehappypuppysite.com/wp-content/uploads/2019/06/Mini-Shiba-Inu-HP-long.jpg" alt="image" style="width:50%">
 </picture>
+
+<br><br>
+<div class="flex-container">
+  <div>M</div>
+  <div>I</div>
+  <div>A</div>
+  <div>O</div>
+  <div>Q</div>
+  <div>I</div>
+  <div>U</div>
+</div>
 
 <footer>
   <p><b>Author: Miaoqiu Sun</b><br>
